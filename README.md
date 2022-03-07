@@ -1,6 +1,51 @@
-# Getting Started with Create React App
+![](https://img.shields.io/badge/Microverse-blueviolet)
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Covid 19 App
+
+## Live preview
+  ## Netlify [link](https://6226260cdff3f800b6d2cfd4--epic-williams-6ed486.netlify.app/)
+
+
+## Video
+  ## Short explanation [link](https://www.loom.com/share/48ed12b9265242278fa720199a759cc3)
+
+
+## Screenshots
+![Screenshot](/src/img/screenshot.jpg)
+
+
+## Contents
+* [Home/Countries](#home)
+* [Country Details](#country-details)
+
+
+## General info
+ In this project we used the real COVID-19 data from Narrativa API. It is mobile application for a dayly tracking Covid 19 data global and for each country. There are covid 19 active cases, recoveries and deaths across all the countries in the world.The application will allow users select country and with click on it specific country with data will display on other page.  It was build using React and Redux libraries.
+
+ ## Technologies
+Project is created with:
+* React
+* Redux
+* JSX
+* CSS
+* API
+
+## Setup
+To run this project, install it locally using:
+- cd Desktop
+- git clone https://github.com/VuDej/covid-19-app.git
+- cd covid-19-app
+- npm install
+- npm start
+
+## Author
+
+👤 **Dejan Vujovic**
+
+- Github : [@VuDej](https://github.com/VuDej)
+- Twitter: [@DejanVuj](https://twitter.com/DejanVuj)
+- LinkedIn : [@Dejan-Vujovic](https://www.linkedin.com/in/dejan-vujovic-5a0672225/)
+
 
 ## Available Scripts
 
@@ -39,32 +84,26 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
+## 🤝 Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Contributions, issues, and feature requests are welcome!
 
-### Analyzing the Bundle Size
+Feel free to check the [issues page](https://github.com/VuDej/covid-19-app/issues/6).
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Show your support
 
-### Making a Progressive Web App
+Give a ⭐️ if you like this project!
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## Acknowledgments
 
-### Advanced Configuration
+A special thanks to  Nelson Sakwa on Behance, author of the original design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+## 📝 License
 
-### Deployment
+This project is [MIT](LICENSE) licensed.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+Created by [@VuDej](https://github.com/VuDej)
