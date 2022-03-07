@@ -1,4 +1,4 @@
-import globalReducer, {getData} from '../redux/duckFolder/duckFile';
+import globalReducer, { getData } from '../redux/duckFolder/duckFile';
 
 const initialState = [];
 describe('test redux', () => {
