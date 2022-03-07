@@ -5,7 +5,7 @@ const SingleCountry = () => (
     <span className="card-images">
       <img
         className="card-img"
-        src={map}
+        src={' '}
         alt="country"
         width="80"
         height="80"
