@@ -1,0 +1,38 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.details {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: hsl(342, 86%, 66%);
+  padding: 20px;
+}
+
+.country-title h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.country-title p {
+  font-size: 17px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+
+.country-date {
+  font-size: 17px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.country-img {
+  filter: grayscale(0.1) hue-rotate(190deg) brightness(50%) contrast(40%) drop-shadow(20%);
+  opacity: 0.3;
+}
