@@ -6,7 +6,6 @@ import globalReducer from './duckFolder/duckFile';
 const reducer = combineReducers({
   globalReducer,
 });
-
 const store = createStore(
   reducer,
   applyMiddleware(logger, thunk),
