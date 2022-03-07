@@ -1,6 +1,10 @@
-import './singleCountry.css';
+import PropTypes from 'prop-types';
+import './oneCountry.css';
 
-const SingleCountry = () => (
+const OneCountry = ({
+  countryName,
+  todayConfirmed,
+}) => (
   <li className="card">
     <span className="card-images">
       <img
@@ -12,10 +16,14 @@ const SingleCountry = () => (
       />
     </span>
     <span className="card-text">
-      <h3>{}</h3>
-      <p>{}</p>
+      <h3>{countryName}</h3>
+      <p>{todayConfirmed}</p>
     </span>
   </li>
 );
 
-export default SingleCountry;
+OneCountry.propTypes = {
+  countryName: PropTypes.string.isRequired,
+  todayConfirmed: PropTypes.string.isRequired,
+};
+export default OneCountry;
