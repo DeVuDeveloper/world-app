@@ -1,0 +1,31 @@
+.details-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  text-align: center;
+}
+
+.country-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  font-weight: bold;
+  text-align: justify;
+  padding: 28px 20px;
+}
+
+.country-detail:nth-child(odd) {
+  background-color: hsl(342, 98%, 63%);
+}
+
+.country-detail:nth-child(even) {
+  background-color: hsl(342, 96%, 68%);
+}
+
+.country-detail small {
+  display: flex;
+  gap: 15px;
+}
