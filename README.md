@@ -11,8 +11,8 @@
 
 
 ## Screenshots
-![World screenshot](/src/img/screenshot.png)
-![Country screenshot](/src/img/screenshot2.png)
+![Screenshot](/src/img/screenshot.jpg)
+
 
 ## Contents
 * [Home/Countries](#home)
@@ -99,7 +99,7 @@ Give a ⭐️ if you like this project!
 
 ## Acknowledgments
 
-- A special thanks to Microverse.
+A special thanks to  Nelson Sakwa on Behance, author of the original design.
 
 ## 📝 License
 

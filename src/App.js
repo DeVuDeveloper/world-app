@@ -7,7 +7,7 @@ import CountryInfos from './components/countryDetails/CountryInfo';
 import Navbar from './components/navbar/Navbar';
 import './App.css';
 
-function App() {
+const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
@@ -23,6 +23,6 @@ function App() {
       </Routes>
     </>
   );
-}
+};
 
 export default App;

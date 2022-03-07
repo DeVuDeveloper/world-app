@@ -36,7 +36,7 @@ const Country = ({ country }) => {
       </li>
       <li className="country-detail">
 
-        <span>total Recovered</span>
+        <span>Total Recovered</span>
         <small>
           {data.yesterdayDeaths}
           <BsArrowRightCircle className="infos-circle" />
