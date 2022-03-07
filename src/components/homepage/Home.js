@@ -1,6 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import OneCountry from '../oneCountry/OneCountry';
+import worldMap from '../../img/worldmap.png';
 import './home.css';
 
 const Homepage = () => {
@@ -10,6 +11,7 @@ const Homepage = () => {
   return (
     <section>
       <header className="header">
+        <img className="img" src={worldMap} alt="world-map" width="60%" height="60%" />
         <div className="wrapper">
           <h1 className="header-title">World</h1>
           <h3 className="header-number">444,638,071</h3>
