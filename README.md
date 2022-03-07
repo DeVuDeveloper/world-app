@@ -6,6 +6,10 @@
   ## Netlify [link]()
 
 
+## Video
+  ## Short explanation [link](https://www.loom.com/share/48ed12b9265242278fa720199a759cc3)
+
+
 ## Screenshots
 ![World screenshot](/src/img/screenshot.png)
 ![Country screenshot](/src/img/screenshot2.png)
