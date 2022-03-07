@@ -3,7 +3,7 @@ import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
 import { GlobalData } from './redux/API/getGlobalData';
 import Homepage from './components/homepage/Home';
-import CountryInfos from './components/countryDetails/Cgit addountryInfo';
+import CountryInfos from './components/countryDetails/CountryInfo';
 import Navbar from './components/navbar/Navbar';
 import './App.css';
 

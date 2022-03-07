@@ -1,38 +1,60 @@
 import React from 'react';
+import PropTypes from 'prop-types';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 import Country from './CountryDetails';
+import CountryCode from '../oneCountry/CountryCode';
 import './countryInfo.css';
 
-const CountryInfos = () => (
+const CountryInfos = () => {
+  const { id } = useParams();
 
-  <section className="wrapper-details">
-    <div className="container">
-      <div className="details">
-        <img
-          className="country-img"
-          src={' '}
-          alt="country-img"
-        />
+  const countryData = useSelector((state) => {
+    if (state === undefined) {
+      return state;
+    } return state.globalReducer.find(
+      (country) => country.id === id,
+    );
+  });
 
-        <div className="country-text">
-          <span className="country-title">
-            <h2>{' '}</h2>
-            <p>
-              Total cases:
-              <br />
-              {}
-              <br />
+  const countryImg = CountryCode[countryData.name];
+  const map = countryImg
+    ? `https://raw.githubusercontent.com/VuDej/worldMaps/main/maps/${countryImg.toLowerCase()}/128.png`
+    : '';
+  return (
+    <section className="wrapper-details">
+      <div className="container">
+        <div className="details">
+          <img
+            className="country-img"
+            src={map}
+            alt="country-img"
+          />
 
-            </p>
-          </span>
-          <span className="country-date">
-            {}
-          </span>
+          <div className="country-text">
+            <span className="country-title">
+              <h2>{countryData.name}</h2>
+              <p>
+                Total cases:
+                <br />
+                {countryData.today_confirmed}
+                <br />
+
+              </p>
+            </span>
+            <span className="country-date">
+              {countryData.date}
+            </span>
+          </div>
         </div>
       </div>
-    </div>
-    <Country country={' '} />
-  </section>
+      <Country country={countryData} />
+    </section>
 
-);
+  );
+};
 
+Country.propTypes = {
+  img: PropTypes.string,
+};
 export default CountryInfos;
