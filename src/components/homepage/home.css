@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.countries {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.img {
+  filter: grayscale(0.2) hue-rotate(140deg);
+  opacity: 0.8;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: hsl(342, 86%, 66%);
+  height: 170px;
+  padding: 0 9px;
+}
+
+.header-title {
+  font-size: 30px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.header-number {
+  font-size: 17px;
+  color: #fff;
+  margin-right: 10px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: hsl(342, 98%, 63%);
+  padding: 5px;
+}
+
+.form-span {
+  padding-left: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.search-input {
+  padding: 2px 0;
+  margin: 0;
+}

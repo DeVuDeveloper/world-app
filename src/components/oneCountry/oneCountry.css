@@ -1,0 +1,63 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 162px;
+  padding: 20px 10px;
+  width: 100%;
+  border: none;
+}
+
+.card:nth-child(4n + 0) {
+  background-color: hsl(342, 92%, 66%);
+}
+
+.card:nth-child(4n + 1) {
+  background-color: hsl(342, 92%, 66%);
+}
+
+.card:nth-child(4n + 2) {
+  background-color: hsl(342, 90%, 70%);
+}
+
+.card:nth-child(4n + 3) {
+  background-color: hsl(342, 91%, 71%);
+}
+
+.button {
+  border: none;
+}
+
+.card-text {
+  text-align: right;
+  cursor: pointer;
+  color: #fff;
+  font-size: 17px;
+}
+
+.card-text h3 {
+  color: #fff;
+  font-size: 17px;
+  margin-bottom: 10px;
+}
+
+.card-text p {
+  color: #fff;
+  font-size: 17px;
+}
+
+.card-img {
+  filter: grayscale(0.1) hue-rotate(190deg) brightness(50%) contrast(40%) drop-shadow(20%);
+  opacity: 0.3;
+  margin-left: 30px;
+}
+
+.card-images {
+  display: flex;
+}
+
+.circle {
+  position: relative;
+  right: -40px;
+  color: #fff;
+}

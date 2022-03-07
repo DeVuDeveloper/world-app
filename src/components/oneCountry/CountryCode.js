@@ -51,7 +51,7 @@ const CountryCode = {
   'Congo (Brazzaville)': 'CG',
   'Cook Islands': 'CK',
   'Costa Rica': 'CR',
-Croatia: 'HR',
+  Croatia: 'HR',
   Cuba: 'CU',
   Cyprus: 'CY',
   Czechia: 'CZ',

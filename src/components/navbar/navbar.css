@@ -1,0 +1,27 @@
+.navbar {
+  display: flex;
+  background-color: hsl(342, 98%, 63%);
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  top: 0;
+  height: 40px;
+}
+
+.icons {
+  display: flex;
+  color: #fff;
+  gap: 10px;
+}
+
+.nav-date {
+  color: #fff;
+  font-size: 17px;
+  font-weight: bolder;
+}
+
+.nav-title {
+  color: rgb(59, 57, 57);
+  font-size: 17px;
+  font-weight: bolder;
+}

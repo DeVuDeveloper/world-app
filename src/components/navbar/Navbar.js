@@ -1,4 +1,5 @@
 import React from 'react';
+import { BiMicrophone, BiCog } from 'react-icons/bi';
 import './navbar.css';
 
 const Navbar = () => (
@@ -10,7 +11,10 @@ const Navbar = () => (
       covid 19
       {}
     </span>
-    <span className="icons" />
+    <span className="icons">
+      <BiMicrophone />
+      <BiCog />
+    </span>
   </nav>
 );
 
