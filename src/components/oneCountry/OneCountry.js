@@ -32,6 +32,6 @@ const OneCountry = ({
 };
 OneCountry.propTypes = {
   countryName: PropTypes.string.isRequired,
-  todayConfirmed: PropTypes.string.isRequired,
+  todayConfirmed: PropTypes.number.isRequired,
 };
 export default OneCountry;
