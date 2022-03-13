@@ -1,9 +1,10 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Country from './CountryDetails';
 import CountryCode from '../oneCountry/CountryCode';
+import Spinner from '../spinner/Spinner';
 import './countryInfo.css';
 
 const CountryInfos = () => {
@@ -21,6 +22,13 @@ const CountryInfos = () => {
   const map = countryImg
     ? `https://raw.githubusercontent.com/VuDej/worldMaps/main/maps/${countryImg.toLowerCase()}/128.png`
     : '';
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 700);
+  }, []);
+
   return (
     <section className="wrapper-details">
       <div className="container">
@@ -46,9 +54,15 @@ const CountryInfos = () => {
               {countryData.date}
             </span>
           </div>
+
         </div>
+
       </div>
-      <Country country={countryData} />
+      {loading === false ? (
+        <Country country={countryData} />
+      ) : (
+        <Spinner />
+      )}
     </section>
 
   );
