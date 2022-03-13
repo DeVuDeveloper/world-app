@@ -38,7 +38,7 @@ const Homepage = () => {
       </header>
       <form className="search-form">
         <span className="form-span">Infections by Country</span>
-        <input className="search-input" name="search" type="text" placeholder="Country Name" onChange={selectCountry} />
+        <input className="search-input" name="search" type="text" placeholder="country" onChange={selectCountry} />
       </form>
       {loading === false ? (
 

@@ -18,11 +18,11 @@
 }
 
 .country-detail:nth-child(odd) {
-  background-color: hsl(342, 98%, 63%);
+  background-color: var(--pink-dark);
 }
 
 .country-detail:nth-child(even) {
-  background-color: hsl(342, 96%, 68%);
+  background-color: var(--pink-light);
 }
 
 .country-detail small {

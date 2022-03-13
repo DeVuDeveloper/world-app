@@ -19,7 +19,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: hsl(342, 86%, 66%);
+  background: var(--pink-primary);
   height: 170px;
   padding: 0 9px;
 }
@@ -40,18 +40,19 @@
   display: flex;
   justify-content: space-between;
   color: #fff;
-  background-color: hsl(342, 98%, 63%);
+  background-color: var(--pink-darker);
   padding: 5px;
 }
 
 .form-span {
   padding-left: 10px;
-  font-size: 17px;
+  font-size: 15px;
   font-weight: bold;
 }
 
 .search-input {
   height: 20px;
+  width: 160px;
   margin: 0 auto;
   padding-left: 10px;
   border: none;
