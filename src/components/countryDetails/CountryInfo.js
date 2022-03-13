@@ -4,7 +4,7 @@ import { useParams } from 'react-router-dom';
 import { useSelector } from 'react-redux';
 import Country from './CountryDetails';
 import CountryCode from '../oneCountry/CountryCode';
-import Spinner from '../spinner/Spinner';
+import spinner from '../../img/virus.png';
 import './countryInfo.css';
 
 const CountryInfos = () => {
@@ -26,7 +26,7 @@ const CountryInfos = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 700);
+    setTimeout(() => setLoading(false), 1000);
   }, []);
 
   return (
@@ -61,7 +61,7 @@ const CountryInfos = () => {
       {loading === false ? (
         <Country country={countryData} />
       ) : (
-        <Spinner />
+        <img className="spin" src={spinner} alt="virus" />
       )}
     </section>
 

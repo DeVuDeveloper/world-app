@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import OneCountry from '../oneCountry/OneCountry';
 import worldMap from '../../img/worldmap.png';
-import Spinner from '../spinner/Spinner';
+import spinner from '../../img/virus.png';
 import './home.css';
 
 const Homepage = () => {
@@ -12,7 +12,7 @@ const Homepage = () => {
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    setTimeout(() => setLoading(false), 900);
+    setTimeout(() => setLoading(false), 2000);
   }, []);
 
   const [findCountry, setSearchCountry] = useState('');
@@ -58,7 +58,7 @@ const Homepage = () => {
 
         </div>
       ) : (
-        <Spinner />
+        <img className="spin" src={spinner} alt="virus" />
       )}
     </section>
   );
