@@ -1,3 +1,11 @@
+:root {
+  --pink-primary: #ec4c8a;
+  --pink-light: #fd5193;
+  --pink-dark: #ce4176;
+  --pink-darker: #a32656;
+  --blue-light: #5687e4;
+}
+
 body {
-  background-color: hsl(342, 100%, 67%);
+  background-color: var(--pink-primary);
 }

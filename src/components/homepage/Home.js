@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import OneCountry from '../oneCountry/OneCountry';
 import worldMap from '../../img/worldmap.png';
+import spinner from '../../img/virus.png';
 import './home.css';
 
 const Homepage = () => {
   const data = useSelector(
     (state) => state.globalReducer,
   );
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 2000);
+  }, []);
 
   const [findCountry, setSearchCountry] = useState('');
   const filteringCountres = data.filter((country) => {
@@ -21,6 +27,7 @@ const Homepage = () => {
 
   const selectCountry = (element) => setSearchCountry(element.target.value);
   return (
+
     <section>
       <header className="header">
         <img className="img" src={worldMap} alt="world-map" width="60%" height="60%" />
@@ -31,19 +38,28 @@ const Homepage = () => {
       </header>
       <form className="search-form">
         <span className="form-span">Infections by Country</span>
-        <input className="search-input" name="search" type="text" placeholder="Country Name" onChange={selectCountry} />
+        <input className="search-input" name="search" type="text" placeholder="country" onChange={selectCountry} />
       </form>
-      <div className="countries">
-        {filteringCountres.map((country) => (
+      {loading === false ? (
 
-          <OneCountry
-            key={country.id}
-            id={country.id}
-            countryName={country.name}
-            todayConfirmed={country.today_confirmed}
-          />
-        ))}
-      </div>
+        <div className="countries">
+
+          {filteringCountres.map((country) => (
+
+            <OneCountry
+              key={country.id}
+              country={country}
+              id={country.id}
+              countryName={country.name}
+              todayConfirmed={country.today_confirmed}
+            />
+
+          ))}
+
+        </div>
+      ) : (
+        <img className="spin" src={spinner} alt="virus" />
+      )}
     </section>
   );
 };

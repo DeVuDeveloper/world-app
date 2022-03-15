@@ -9,19 +9,19 @@
 }
 
 .card:nth-child(4n + 0) {
-  background-color: hsl(342, 92%, 66%);
+  background-color: var(--pink-dark);
 }
 
 .card:nth-child(4n + 1) {
-  background-color: hsl(342, 92%, 66%);
+  background-color: var(--pink-dark);
 }
 
 .card:nth-child(4n + 2) {
-  background-color: hsl(342, 90%, 70%);
+  background-color: var(--pink-light);
 }
 
 .card:nth-child(4n + 3) {
-  background-color: hsl(342, 91%, 71%);
+  background-color: var(--pink-light);
 }
 
 .button {

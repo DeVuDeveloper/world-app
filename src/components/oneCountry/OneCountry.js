@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import CountryCode from './CountryCode';
+
 import './oneCountry.css';
 
 const OneCountry = ({
@@ -15,31 +16,39 @@ const OneCountry = ({
     : '';
 
   return (
+
     <li
       key={id}
       className="card"
     >
+
       <Link
         to={`/${id}`}
         style={{ textDecoration: 'none' }}
       >
+        <div>
 
-        <span className="card-images">
-          <img
-            className="card-img"
-            src={map}
-            alt="country"
-            width="80"
-            height="80"
-          />
-          <BsArrowRightCircle className="circle" />
-        </span>
-        <span className="card-text">
-          <h3>{countryName}</h3>
-          <p>{todayConfirmed}</p>
-        </span>
+          <span className="card-images">
+            <img
+              className="card-img"
+              src={map}
+              alt="country"
+              width="80"
+              height="80"
+            />
+            <BsArrowRightCircle className="circle" />
+          </span>
+          <span className="card-text">
+            <h3>{countryName}</h3>
+            <p>{todayConfirmed}</p>
+          </span>
+
+        </div>
+
       </Link>
+
     </li>
+
   );
 };
 OneCountry.propTypes = {
