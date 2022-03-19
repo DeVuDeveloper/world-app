@@ -3,7 +3,7 @@
 # Covid 19 App
 
 ## Live preview
-  ## Netlify [link](https://6226260cdff3f800b6d2cfd4--epic-williams-6ed486.netlify.app/)
+  ## Netlify [link](https://covid19-orogoro.netlify.app/)
 
 
 ## Video
