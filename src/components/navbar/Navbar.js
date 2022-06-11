@@ -35,7 +35,7 @@ const Navbar = () => {
         </Link>
       ) : <span className="nav-date">{newDate}</span>}
       <span className="nav-title">
-        covid 19
+        World
         {location.pathname}
       </span>
       <span className="icons">

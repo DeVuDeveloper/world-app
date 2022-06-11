@@ -19,7 +19,7 @@ const Homepage = () => {
   const filteringCountres = data.filter((country) => {
     if (findCountry === '') {
       return country;
-    } if (country.id.includes(findCountry)) {
+    } if (country.name.common.includes(findCountry)) {
       return country;
     }
     return '';
@@ -33,11 +33,11 @@ const Homepage = () => {
         <img className="img" src={worldMap} alt="world-map" width="60%" height="60%" />
         <div className="wrapper">
           <h1 className="header-title">World</h1>
-          <h3 className="header-number">444,638,071</h3>
+          <h3 className="header-number">Countries</h3>
         </div>
       </header>
       <form className="search-form">
-        <span className="form-span">Infections by Country</span>
+        <span className="form-span">Countries</span>
         <input className="search-input" name="search" type="text" placeholder="country" onChange={selectCountry} />
       </form>
       {loading === false ? (
@@ -47,11 +47,10 @@ const Homepage = () => {
           {filteringCountres.map((country) => (
 
             <OneCountry
-              key={country.id}
+              key={country.code}
               country={country}
-              id={country.id}
-              countryName={country.name}
-              todayConfirmed={country.today_confirmed}
+              countryName={country.name.common}
+              code={country.code}
             />
 
           ))}

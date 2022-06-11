@@ -6,9 +6,8 @@ import CountryCode from './CountryCode';
 import './oneCountry.css';
 
 const OneCountry = ({
-  id,
+  code,
   countryName,
-  todayConfirmed,
 }) => {
   const countryImg = CountryCode[countryName];
   const map = countryImg
@@ -18,12 +17,12 @@ const OneCountry = ({
   return (
 
     <li
-      key={id}
+      key={code}
       className="card"
     >
 
       <Link
-        to={`/${id}`}
+        to={`/${code}`}
         style={{ textDecoration: 'none' }}
       >
         <div>
@@ -40,7 +39,7 @@ const OneCountry = ({
           </span>
           <span className="card-text">
             <h3>{countryName}</h3>
-            <p>{todayConfirmed}</p>
+            <p>{code}</p>
           </span>
 
         </div>
@@ -52,8 +51,7 @@ const OneCountry = ({
   );
 };
 OneCountry.propTypes = {
-  id: PropTypes.string.isRequired,
+  code: PropTypes.string.isRequired,
   countryName: PropTypes.string.isRequired,
-  todayConfirmed: PropTypes.number.isRequired,
 };
 export default OneCountry;

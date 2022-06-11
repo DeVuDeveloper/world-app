@@ -7,6 +7,19 @@ export const getData = (payload) => ({
   payload,
 });
 
+export const GlobalDataFromAPI = () => (dispatch) => fetch('https://restcountries.com/v3.1/all')
+  .then((response) => response.json())
+  .then((data) => {
+    dispatch({
+      type: GET_DATA,
+      payload: data.map((c) => ({
+        name: c.name,
+        region: c.region,
+        code: c.cca2,
+      })),
+    });
+  });
+
 const globalReducer = (state = initialState, action) => {
   switch (action.type) {
     case GET_DATA:
