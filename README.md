@@ -4,6 +4,8 @@
 
 ## Live preview
   ## Netlify [link](https://covid19-orogoro.netlify.app/)
+  ### Notice
+  Application changed Api, instead tracking covid, now shows countries and details for specific country. Search with uppercase first letter.
 
 
 ## Video
