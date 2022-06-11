@@ -55,7 +55,6 @@ const CountryInfos = () => {
           country={countryData}
           officialName={countryData.name.official}
           region={countryData.region}
-          nativeName={countryData.name.nativeName.deu.official}
         />
       ) : (
         <img className="spin" src={spinner} alt="virus" />

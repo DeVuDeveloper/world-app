@@ -3,20 +3,13 @@ import PropTypes from 'prop-types';
 import { BsArrowRightCircle } from 'react-icons/bs';
 import './countryDetails.css';
 
-const Country = ({ officialName, nativeName, region }) => {
+const Country = ({ officialName, region }) => {
   return (
     <ul className="details-wrapper">
       <li className="country-detail">
         <span>Official name</span>
         <small>
           {officialName}
-          <BsArrowRightCircle className="infos-circle" />
-        </small>
-      </li>
-      <li className="country-detail">
-        <span>Native Name</span>
-        <small>
-          {nativeName}
           <BsArrowRightCircle className="infos-circle" />
         </small>
       </li>
@@ -33,6 +26,5 @@ const Country = ({ officialName, nativeName, region }) => {
 Country.propTypes = {
   officialName: PropTypes.string.isRequired,
   region: PropTypes.string.isRequired,
-  nativeName: PropTypes.string.isRequired,
 };
 export default Country;
