@@ -8,17 +8,16 @@ import spinner from '../../img/virus.png';
 import './countryInfo.css';
 
 const CountryInfos = () => {
-  const { id } = useParams();
+  const { cd } = useParams();
 
   const countryData = useSelector((state) => {
     if (state === undefined) {
       return state;
-    } return state.globalReducer.find(
-      (country) => country.id === id,
-    );
+    }
+    return state.globalReducer.find((country) => country.code === cd);
   });
 
-  const countryImg = CountryCode[countryData.name];
+  const countryImg = CountryCode[countryData.name.common];
   const map = countryImg
     ? `https://raw.githubusercontent.com/VuDej/worldMaps/main/maps/${countryImg.toLowerCase()}/128.png`
     : '';
@@ -33,38 +32,35 @@ const CountryInfos = () => {
     <section className="wrapper-details">
       <div className="container">
         <div className="details">
-          <img
-            className="country-img"
-            src={map}
-            alt="country-img"
-          />
+          <img className="country-img" src={map} alt="country-img" />
 
           <div className="country-text">
             <span className="country-title">
-              <h2>{countryData.name}</h2>
+              <h2>{countryData.name.common}</h2>
               <p>
-                Total cases:
                 <br />
-                {countryData.today_confirmed}
+                {countryData.code}
                 <br />
-
               </p>
             </span>
-            <span className="country-date">
+            {/* <span className="country-date">
               {countryData.date}
-            </span>
+            </span> */}
           </div>
-
         </div>
-
       </div>
       {loading === false ? (
-        <Country country={countryData} />
+        <Country
+          key={countryData.code}
+          country={countryData}
+          officialName={countryData.name.official}
+          region={countryData.region}
+          nativeName={countryData.name.nativeName.deu.official}
+        />
       ) : (
         <img className="spin" src={spinner} alt="virus" />
       )}
     </section>
-
   );
 };
 

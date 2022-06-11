@@ -1,7 +1,7 @@
 import { useEffect } from 'react';
 import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router-dom';
-import { GlobalData } from './redux/API/getGlobalData';
+import { GlobalDataFromAPI } from './redux/duckFolder/duckFile';
 import Homepage from './components/homepage/Home';
 import CountryInfos from './components/countryDetails/CountryInfo';
 import Navbar from './components/navbar/Navbar';
@@ -11,7 +11,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(GlobalData());
+    dispatch(GlobalDataFromAPI());
   }, []);
 
   return (
@@ -19,7 +19,7 @@ const App = () => {
       <Navbar />
       <Routes>
         <Route path="/" element={<Homepage />} />
-        <Route path="/:id" element={<CountryInfos />} />
+        <Route path="/:cd" element={<CountryInfos />} />
       </Routes>
     </>
   );
