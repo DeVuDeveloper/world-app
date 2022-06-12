@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Covid 19 App
+# World
 
 ## Live preview
   ## Netlify [link](https://covid19-orogoro.netlify.app/)
@@ -22,7 +22,7 @@
 
 
 ## General info
- In this project we used the real COVID-19 data from Narrativa API. It is mobile application for a dayly tracking Covid 19 data global and for each country. There are covid 19 active cases, recoveries and deaths across all the countries in the world.The application will allow users select country and with click on it specific country with data will display on other page.  It was build using React and Redux libraries.
+ In this project I used the data from an API to get all wolrld's countries. It is mobile application. The application will allow users select country and with click on it specific country with data will display on other page.  It was build using React and Redux libraries.
 
  ## Technologies
 Project is created with:
