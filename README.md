@@ -13,7 +13,7 @@
 
 
 ## Screenshots
-![Screenshot](/src/img/screenshot.jpg)
+![Screenshot](/src/img/screenshot.png)
 
 
 ## Contents
