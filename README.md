@@ -3,7 +3,7 @@
 # World
 
 ## Live preview
-  ## Netlify [link](https://covid19-orogoro.netlify.app/)
+  ## Netlify [link](https://world-dejan.netlify.app/)
   ### Notice
   Application changed Api, instead tracking covid, now shows countries and details for specific country. Search with uppercase first letter.
 
