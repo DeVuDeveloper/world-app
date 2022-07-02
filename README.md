@@ -97,10 +97,6 @@ Feel free to check the [issues page](https://github.com/VuDej/covid-19-app/issue
 
 Give a ⭐️ if you like this project!
 
-## Acknowledgments
-
-A special thanks to  Nelson Sakwa on Behance, author of the original design.
-
 ## 📝 License
 
 This project is [MIT](LICENSE) licensed.
